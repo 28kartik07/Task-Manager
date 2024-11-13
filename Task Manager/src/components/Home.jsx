@@ -23,16 +23,21 @@ function Home()
                 <button>hello world</button>
             </div>
 
+            <div className="task_category_label">
+                <h3>upcoming tasks</h3>
+                <h3>over due tasks</h3>
+                <h3>competed tasks</h3>
+            </div>
+
             <div className="task_category">
                 <div className="task_element">
-                    <h3>upcoming tasks</h3>
-                    {/* <Upcoming/> */}
+                    <Upcoming tasks={tasks}/>
                 </div>
                 <div className="task_element">
-                    <h3>over due tasks</h3>
+                    
                 </div>
                 <div className="task_element">
-                    <h3>competed tasks</h3>
+                    
                 </div>
             </div>
             

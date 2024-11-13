@@ -1,0 +1,41 @@
+.main_card
+{
+    background-color: rgb(24, 24, 24);
+}
+
+.priority-button {
+    margin-right: 10px;
+    height: 20px;
+    width: 50px;
+    margin-top: 2px;
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-size: 14px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .priority-button.high {
+    background-color: red; /* Red for high priority */
+  }
+  
+  .priority-button.medium {
+    background-color: orange; /* Orange for medium priority */
+  }
+  
+  .priority-button.low {
+    background-color: green; /* Green for low priority */
+  }
+  
+  .priority-button:hover:not(:disabled) {
+    opacity: 0.9; /* Slight fade effect on hover */
+  }
+  
+  .priority-button:disabled {
+    background-color: #cccccc; /* Gray for disabled */
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  

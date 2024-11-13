@@ -21,10 +21,6 @@ const Popup = ({tasks , setNewTasks}) => {
         e.preventDefault();
         const updatedTasks = [...tasks, formData];
         setNewTasks(updatedTasks);
-
-        console.log(tasks); 
-
-        console.log("Form Data Submitted:", formData);
         togglePopup();
     };
 

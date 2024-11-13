@@ -1,5 +1,6 @@
 import {useState,useEffect} from "react"
-function Upcoming()
+import Taskcard from "./cards/Taskcard";
+function Upcoming({tasks})
 {
     useEffect(() => {
         // Persist tasks in local storage
@@ -7,10 +8,11 @@ function Upcoming()
     }, [tasks]);
     return (
         <div>
-            hello world
-            {/* {tasks.map((task, index) => (
-                <li key={index}>{task}</li>
-            ))} */}
+            {tasks.map((task, index) => (
+
+                <Taskcard key={index} task={task}/>
+
+            ))}
         </div>
     )
 }
