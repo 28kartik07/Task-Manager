@@ -1,11 +1,54 @@
 .home
 {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     background-color: black;
     color: white;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 90%; 
 } 
+
+/* add and search task section */
+
+.add_task
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+.add_task_element
+{
+    border: none;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 20%;
+    background-color: rgb(24, 24, 24);
+}
+
+/* task category section */
+.task_category
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+}
+.task_element
+{
+    background-color: rgb(24, 24, 24);
+    margin: 0px;
+    text-align: center;
+    width: 30%;
+    height: 90%;
+}
