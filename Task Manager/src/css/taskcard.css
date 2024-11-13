@@ -1,6 +1,11 @@
 .main_card
 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
     background-color: rgb(24, 24, 24);
+    height: 8.5rem;
+    border-radius: 20px;
 }
 
 .priority-button {
@@ -37,5 +42,64 @@
     background-color: #cccccc; /* Gray for disabled */
     cursor: not-allowed;
     box-shadow: none;
+  }
+  
+  /* buttom image styling code  */
+
+  .image-button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    margin-top: 1rem;
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-flex; /* Center image if necessary */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-button img {
+    height: 1.5rem; /* Adjust to desired size */
+    width: 1.5rem; /* Adjust to desired size */
+  }
+  
+
+  /* description button styling */
+
+  .descbutton {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    height: 1.5rem; /* Slightly increased height for a more substantial look */
+    padding: 0 20px; /* Wider padding for better spacing */
+    font-size: 10px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    background: linear-gradient(145deg, #f0f0f0, #dcdcdc); /* Soft gradient background */
+    color: #333; /* Dark gray text */
+    border: none; /* Remove border */
+    border-radius: 30px; /* Highly rounded corners for a pill shape */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle, deeper shadow */
+    transition: all 0.3s ease; /* Smooth transitions for all properties */
+  }
+  
+  .descbutton:hover {
+    background: linear-gradient(145deg, #dcdcdc, #f0f0f0); /* Reversed gradient on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+  }
+  
+  .descbutton:active {
+    transform: translateY(2px); /* Downward movement when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow when active */
+  }
+  
+  .descbutton:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add custom focus ring */
+  }
+  
+  .descbutton i {
+    margin-right: 8px; /* Spacing for icon if needed */
+    font-size: 1.2rem; /* Icon size adjustment */
   }
   

@@ -8,11 +8,15 @@ function Upcoming({tasks})
     }, [tasks]);
     return (
         <div>
-            {tasks.map((task, index) => (
-
-                <Taskcard key={index} task={task}/>
-
-            ))}
+            {tasks.map((task, index) => {
+                const taskDueDate = new Date(task.duedate);
+                const currentDate = new Date();
+              
+                if (taskDueDate > currentDate) {
+                  return <Taskcard key={index} task={task} />;
+                }
+                return null;
+            })}
         </div>
     )
 }

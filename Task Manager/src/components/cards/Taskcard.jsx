@@ -3,7 +3,7 @@ function Taskcard({task})
 {
 
     return (
-        <div className="main_card" style={{display:'flex' , flexDirection:'column', marginTop:'1rem'}}>
+        <div className="main_card">
 
             <div style={{display:'flex', justifyContent:'space-between'}}>
                 <h1 style={{marginLeft:'10px',marginTop:'0px',marginBottom:'0px'}}>{task.title}</h1>
@@ -13,16 +13,19 @@ function Taskcard({task})
             </div>
 
             <div style={{display:'flex', justifyContent:'space-between'}}>
-                <h4 style={{marginLeft:'50px',marginTop:'2px',marginBottom:'0px'}}>Due Date : {task.duedate}</h4>
+                <h4 style={{marginLeft:'30px',marginTop:'5px'}}>Due Date : {task.duedate}</h4>
             </div>
+
             <div style={{display:'flex',justifyContent:'space-evenly'}}>
-                <button style={{marginTop:'20px',marginRight:'10px',height:'2rem' }}>
-                    <img src="" alt="" />
+
+                <button className="image-button">
+                    <img className="image" src="/images/edit.png" alt="Delete" />
                 </button>
-                <button style={{marginTop:'20px',marginRight:'10px',height:'2rem' }}> 
-                    Delete
+                <button className="image-button">
+                    <img className="image" src="/images/delete.png" alt="Delete" />
                 </button>
-                <button style={{marginTop:'20px',marginRight:'10px',height:'2rem' }}> Description</button>
+
+                <button className="descbutton">Description</button>
             </div>
         </div>
     )
