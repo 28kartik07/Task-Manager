@@ -1,27 +1,38 @@
 import '../css/home.css'
+import Popup from './Popup';
+import Upcoming from './Upcoming';
+import { useState,useEffect } from 'react';
 function Home()
 {
-    function handleClick()
+    const [tasks, setTasks] = useState(() => {
+        // Initialize tasks from local storage
+        const storedTasks = localStorage.getItem("tasks");
+        return storedTasks ? JSON.parse(storedTasks) : [];
+    });
+
+    function setNewTasks(data)
     {
-        console.log("add is clicked");
+        setTasks(data);
     }
+    
     return (
         <div className="home">
 
             <div className="add_task">
-                <button className="add_task_element" onClick={handleClick}>Add Task</button>
-                <button className="add_task_element" onClick={handleClick}>Search Task</button>
+                <Popup tasks={tasks} setNewTasks={setNewTasks}/>
+                <button>hello world</button>
             </div>
 
             <div className="task_category">
                 <div className="task_element">
-                    <h1>upcoming tasks</h1>
+                    <h3>upcoming tasks</h3>
+                    {/* <Upcoming/> */}
                 </div>
                 <div className="task_element">
-                    <h1>over due tasks</h1>
+                    <h3>over due tasks</h3>
                 </div>
                 <div className="task_element">
-                    <h1>competed tasks</h1>
+                    <h3>competed tasks</h3>
                 </div>
             </div>
             
