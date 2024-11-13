@@ -5,10 +5,10 @@ import {Outlet} from 'react-router-dom'
 function Applayout()
 {
     return (
-        <>
-            <Header />
-            <Outlet />
-        </>
+        <div className="mainroot" style={{display: 'flex',flexDirection:'column',alignItems:'center',height:'100vh',width:'100wh'}}>
+            <Header/>
+            <Outlet/>
+        </div>
     )
 }
 
