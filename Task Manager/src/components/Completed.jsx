@@ -9,7 +9,7 @@ function Completed({tasks , setNewTasks})
     return (
         <div>
             {tasks.map((task, index) => {
-                if (task.completed == false) {
+                if (task.completed == true) {
                   return <Taskcard key={index} task={task} tasks={tasks} setNewTasks={setNewTasks}/>;
                 }
                 return null;

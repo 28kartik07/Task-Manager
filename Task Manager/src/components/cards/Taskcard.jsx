@@ -1,5 +1,6 @@
 import '../../css/taskcard.css'
 import HandleEdit from '../Handleedit';
+import Description from '../Description';
 function Taskcard({task,tasks,setNewTasks})
 {
     function handleDelete(taskid)
@@ -37,7 +38,8 @@ function Taskcard({task,tasks,setNewTasks})
                     <img className="image" src="/images/delete.png" alt="Delete" />
                 </button>
 
-                <button className="descbutton">Description</button>
+                {/* <button className="descbutton">Description</button> */}
+                <Description task={task} onUpdate={handleUpdate} />
 
             </div>
         </div>

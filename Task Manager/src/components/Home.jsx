@@ -1,4 +1,5 @@
 import '../css/home.css'
+import Completed from './Completed';
 import Overdue from './Overdue';
 import Popup from './Popup';
 import Upcoming from './Upcoming';
@@ -38,7 +39,7 @@ function Home()
                     <Overdue tasks={tasks} setNewTasks={setNewTasks}/>
                 </div>
                 <div className="task_element">
-                    
+                    <Completed tasks={tasks} setNewTasks={setNewTasks}/>
                 </div>
             </div>
             
