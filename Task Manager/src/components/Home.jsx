@@ -44,19 +44,19 @@ function Home() {
 
             <div className="task_category">
                 <div className="task_element">
-                    <h3>upcoming tasks</h3>
+                    <h3>Upcoming Tasks</h3>
                     <div className="scrollable-content">
                         <Upcoming tasks={filteredTasks} setNewTasks={setNewTasks} />
                     </div>
                 </div>
                 <div className="task_element">
-                    <h3>over due tasks</h3>
+                    <h3>Overdue Tasks</h3>
                     <div className="scrollable-content">
                         <Overdue tasks={filteredTasks} setNewTasks={setNewTasks} />
                     </div>
                 </div>
                 <div className="task_element">
-                    <h3>completed tasks</h3>
+                    <h3>Completed Tasks</h3>
                     <div className="scrollable-content">
                         <Completed tasks={filteredTasks} setNewTasks={setNewTasks} />
                     </div>
