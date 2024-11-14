@@ -1,4 +1,5 @@
 import '../css/home.css'
+import Overdue from './Overdue';
 import Popup from './Popup';
 import Upcoming from './Upcoming';
 import { useState,useEffect } from 'react';
@@ -34,7 +35,7 @@ function Home()
                     <Upcoming tasks={tasks} setNewTasks={setNewTasks}/>
                 </div>
                 <div className="task_element">
-                    
+                    <Overdue tasks={tasks} setNewTasks={setNewTasks}/>
                 </div>
                 <div className="task_element">
                     
