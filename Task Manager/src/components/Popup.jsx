@@ -9,7 +9,8 @@ const Popup = ({tasks , setNewTasks}) => {
         description: "",
         duedate: "",
         priority: "",
-        completed: false
+        completed: false,
+        id: ""
     });
 
     const handleChange = (e) => {
@@ -19,7 +20,12 @@ const Popup = ({tasks , setNewTasks}) => {
 
     const addTask = (e) => {
         e.preventDefault();
-        const updatedTasks = [...tasks, formData];
+        const newid = Date.now().toString();
+        const newtask = {
+            ...formData,
+            id: newid
+        }
+        const updatedTasks = [...tasks, newtask];
         setNewTasks(updatedTasks);
         togglePopup();
     };

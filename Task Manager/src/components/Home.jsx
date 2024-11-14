@@ -31,7 +31,7 @@ function Home()
 
             <div className="task_category">
                 <div className="task_element">
-                    <Upcoming tasks={tasks}/>
+                    <Upcoming tasks={tasks} setNewTasks={setNewTasks}/>
                 </div>
                 <div className="task_element">
                     

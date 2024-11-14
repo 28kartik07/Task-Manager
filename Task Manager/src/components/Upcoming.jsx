@@ -1,6 +1,6 @@
 import {useState,useEffect} from "react"
 import Taskcard from "./cards/Taskcard";
-function Upcoming({tasks})
+function Upcoming({tasks , setNewTasks})
 {
     useEffect(() => {
         // Persist tasks in local storage
@@ -13,7 +13,7 @@ function Upcoming({tasks})
                 const currentDate = new Date();
               
                 if (taskDueDate > currentDate) {
-                  return <Taskcard key={index} task={task} />;
+                  return <Taskcard key={index} task={task} tasks={tasks} setNewTasks={setNewTasks}/>;
                 }
                 return null;
             })}
