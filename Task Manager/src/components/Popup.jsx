@@ -106,7 +106,6 @@ const Popup = ({tasks , setNewTasks}) => {
                 </div>
             )}
 
-            {/* Optional overlay */}
             {isPopupVisible && (
                 <div
                     style={{

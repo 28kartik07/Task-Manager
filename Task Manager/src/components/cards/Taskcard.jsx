@@ -1,17 +1,21 @@
 import '../../css/taskcard.css'
+import HandleEdit from '../Handleedit';
 function Taskcard({task,tasks,setNewTasks})
 {
     function handleDelete(taskid)
     {
-        // Filter out the task by its id
         const updatedTasks = tasks.filter(task => task.id !== taskid);
-        
-        // Update the tasks state
         setNewTasks(updatedTasks);
-        
-        // Optionally, update localStorage to persist the changes
         localStorage.setItem("tasks", JSON.stringify(updatedTasks));
     }
+
+    const handleUpdate = (updatedTask) => {
+        const updatedTasks = tasks.map((task) =>
+            task.id === updatedTask.id ? updatedTask : task
+        );
+        setNewTasks(updatedTasks);
+    };
+
     return (
         <div className="main_card">
 
@@ -28,14 +32,13 @@ function Taskcard({task,tasks,setNewTasks})
 
             <div style={{display:'flex',justifyContent:'space-evenly'}}>
 
-                <button className="image-button">
-                    <img className="image" src="/images/edit.png" alt="Delete" />
-                </button>
+                <HandleEdit task={task} onUpdate={handleUpdate}/>
                 <button className="image-button" onClick={() => handleDelete(task.id)}>
                     <img className="image" src="/images/delete.png" alt="Delete" />
                 </button>
 
                 <button className="descbutton">Description</button>
+
             </div>
         </div>
     )

@@ -9,9 +9,6 @@ function Completed({tasks , setNewTasks})
     return (
         <div>
             {tasks.map((task, index) => {
-                // const taskDueDate = new Date(task.duedate);
-                // const currentDate = new Date();
-                
                 if (task.completed == false) {
                   return <Taskcard key={index} task={task} tasks={tasks} setNewTasks={setNewTasks}/>;
                 }

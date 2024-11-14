@@ -11,35 +11,35 @@
 .priority-button {
     margin-right: 10px;
     height: 20px;
-    width: 50px;
+    width: 60px;
     margin-top: 2px;
-    color: white; /* White text */
+    color: white; 
     border: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    font-size: 14px; /* Adjust font size */
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    font-size: 14px; 
+    transition: background-color 0.3s ease; 
   }
   
   .priority-button.high {
-    background-color: red; /* Red for high priority */
+    background-color: red; 
   }
   
   .priority-button.medium {
-    background-color: orange; /* Orange for medium priority */
+    background-color: orange; 
   }
   
   .priority-button.low {
-    background-color: green; /* Green for low priority */
+    background-color: green; 
   }
   
   .priority-button:hover:not(:disabled) {
-    opacity: 0.9; /* Slight fade effect on hover */
+    opacity: 0.9; 
   }
   
   .priority-button:disabled {
-    background-color: #cccccc; /* Gray for disabled */
+    background-color: #cccccc;
     cursor: not-allowed;
     box-shadow: none;
   }
@@ -47,19 +47,19 @@
   /* buttom image styling code  */
 
   .image-button {
-    background: none; /* Remove background */
-    border: none; /* Remove border */
-    padding: 0; /* Remove padding */
+    background: none; 
+    border: none;
+    padding: 0; 
     margin-top: 1rem;
-    cursor: pointer; /* Pointer cursor on hover */
-    display: inline-flex; /* Center image if necessary */
+    cursor: pointer; 
+    display: inline-flex; 
     align-items: center;
     justify-content: center;
   }
   
   .image-button img {
-    height: 1.5rem; /* Adjust to desired size */
-    width: 1.5rem; /* Adjust to desired size */
+    height: 1.5rem; 
+    width: 1.5rem; 
   }
   
 
@@ -69,37 +69,37 @@
     margin-top: 20px;
     margin-right: 10px;
     margin-bottom: 5px;
-    height: 1.5rem; /* Slightly increased height for a more substantial look */
-    padding: 0 20px; /* Wider padding for better spacing */
-    font-size: 10px; /* Larger font size */
-    font-weight: bold; /* Bold text */
-    background: linear-gradient(145deg, #f0f0f0, #dcdcdc); /* Soft gradient background */
-    color: #333; /* Dark gray text */
-    border: none; /* Remove border */
-    border-radius: 30px; /* Highly rounded corners for a pill shape */
-    cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle, deeper shadow */
-    transition: all 0.3s ease; /* Smooth transitions for all properties */
+    height: 1.5rem; 
+    padding: 0 20px; 
+    font-size: 10px; 
+    font-weight: bold; 
+    background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
+    color: #333;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
   }
   
   .descbutton:hover {
-    background: linear-gradient(145deg, #dcdcdc, #f0f0f0); /* Reversed gradient on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
-    transform: translateY(-2px); /* Slight upward movement */
+    background: linear-gradient(145deg, #dcdcdc, #f0f0f0); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
   }
   
   .descbutton:active {
-    transform: translateY(2px); /* Downward movement when clicked */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow when active */
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
   }
   
   .descbutton:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Add custom focus ring */
+    outline: none; 
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
   }
   
   .descbutton i {
-    margin-right: 8px; /* Spacing for icon if needed */
-    font-size: 1.2rem; /* Icon size adjustment */
+    margin-right: 8px; 
+    font-size: 1.2rem; 
   }
   
