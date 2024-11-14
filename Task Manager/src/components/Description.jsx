@@ -4,10 +4,10 @@ import "../css/description.css";
 const Description = ({ task, onUpdate }) => {
     const [isPopupVisible, setPopupVisible] = useState(false);
 
-    const handleMarkAsCompleted = () => {
-        const updatedTask = { ...task, completed: true };
+    const handleToggleCompleted = () => {
+        const updatedTask = { ...task, completed: !task.completed }; 
         onUpdate(updatedTask); 
-        setPopupVisible(false); 
+        setPopupVisible(false);
     };
 
     return (
@@ -31,8 +31,8 @@ const Description = ({ task, onUpdate }) => {
                             <p><strong>Completed:</strong> {task.completed ? "Yes" : "No"}</p>
                         </div>
                         <div className="popup-actions">
-                            <button onClick={handleMarkAsCompleted}>
-                                Mark as Completed
+                            <button onClick={handleToggleCompleted}>
+                                {task.completed ? "Mark as Incomplete" : "Mark as Completed"}
                             </button>
                             <button
                                 onClick={() => setPopupVisible(false)}
