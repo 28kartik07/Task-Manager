@@ -11,9 +11,9 @@ function Upcoming({tasks , setNewTasks})
             {tasks.map((task, index) => {
                 const taskDueDate = new Date(task.duedate);
                 const currentDate = new Date();
-                
+            
                 if (taskDueDate > currentDate && task.completed == false) {
-                  return <Taskcard key={index} task={task} tasks={tasks} setNewTasks={setNewTasks}/>;
+                return <Taskcard key={index} task={task} tasks={tasks} setNewTasks={setNewTasks}/>;
                 }
                 return null;
             })}

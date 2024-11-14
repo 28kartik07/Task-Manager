@@ -19,7 +19,6 @@ function Taskcard({task,tasks,setNewTasks})
 
     return (
         <div className="main_card">
-
             <div style={{display:'flex', justifyContent:'space-between'}}>
                 <h1 style={{marginLeft:'10px',marginTop:'0px',marginBottom:'0px'}}>{task.title}</h1>
                 <button className={`priority-button ${task.priority === "high"? "high": task.priority === "medium" ? "medium": "low"}`}>
