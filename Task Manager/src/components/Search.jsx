@@ -20,7 +20,7 @@ const Search = ({ tasks, onApply, onClose }) => {
         const isFilterEmpty = !filters.title && !filters.priority && filters.completed === '';
     
         const filtered = isFilterEmpty
-            ? tasks // If no filters are applied, return all tasks
+            ? tasks 
             : tasks.filter((task) => {
                   const matchesTitle = filters.title
                       ? task.title.toLowerCase().includes(filters.title.toLowerCase())
