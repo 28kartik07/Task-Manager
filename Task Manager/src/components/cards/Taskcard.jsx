@@ -38,7 +38,6 @@ function Taskcard({task,tasks,setNewTasks})
                     <img className="image" src="/images/delete.png" alt="Delete" />
                 </button>
 
-                {/* <button className="descbutton">Description</button> */}
                 <Description task={task} onUpdate={handleUpdate} />
 
             </div>

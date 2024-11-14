@@ -31,8 +31,8 @@ const Popup = ({tasks , setNewTasks}) => {
     };
 
     return (
-        <div className='add_task_element'>
-            <button onClick={togglePopup}>Add Task</button>
+        <div>
+            <button className='add-task-button' onClick={togglePopup}>Add Task</button>
 
             {isPopupVisible && (
                 <div

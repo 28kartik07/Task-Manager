@@ -22,18 +22,29 @@
     width: 100%;
     height: 30%;
 }
-.add_task_element
-{
-    border: none;
-    color: white;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30%;
-    width: 20%;
-    background-color: rgb(24, 24, 24);
+
+.add-task-button {
+    background-color: grey; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 1rem;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
+
+.add-task-button:hover {
+    background-color: darkgrey;
+    transform: scale(1.05);
+}
+
+.add-task-button:active {
+    transform: scale(0.95); 
+    background-color: #a9a9a9; 
+}
+
+
 
 /* task category section */
 .task_category

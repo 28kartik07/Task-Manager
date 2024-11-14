@@ -22,7 +22,7 @@ function Home()
 
             <div className="add_task">
                 <Popup tasks={tasks} setNewTasks={setNewTasks}/>
-                <button>hello world</button>
+                <button className='add-task-button'>hello world</button>
             </div>
 
             <div className="task_category_label">
