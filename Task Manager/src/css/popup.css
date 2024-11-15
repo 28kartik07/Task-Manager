@@ -1,0 +1,94 @@
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #000;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #fff;  
+}
+
+form > div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+form button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 4%;
+    color: #080808;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form .cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+form .cancel-button:hover {
+    background-color: #e53935;
+}
+
+form .form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+    
+    form button {
+        font-size: 14px;
+    }
+    
+    form .form-actions {
+        flex-direction: column;
+    }
+    
+    form button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

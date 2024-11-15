@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../css/popup.css';
 
 const Popup = ({tasks , setNewTasks}) => {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -50,59 +51,60 @@ const Popup = ({tasks , setNewTasks}) => {
                     }}
                 >
 
-                    <form>
-                        <div>
-                            <label htmlFor="title">Title:</label>
-                            <input
-                                type="text"
-                                name="title"
-                                id="title"
-                                placeholder="Enter title"
-                                value={formData.title}
-                                onChange={handleChange}
-                            />
-                        </div>
+<form>
+    <div>
+        <label htmlFor="title">Title:</label>
+        <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Enter title"
+            value={formData.title}
+            onChange={handleChange}
+        />
+    </div>
 
-                        <div>
-                            <label htmlFor="description">Description:</label>
-                            <textarea
-                                name="description"
-                                id="description"
-                                placeholder="Enter description"
-                                value={formData.description}
-                                onChange={handleChange}
-                            ></textarea>
-                        </div>
+    <div>
+        <label htmlFor="description">Description:</label>
+        <textarea
+            name="description"
+            id="description"
+            placeholder="Enter description"
+            value={formData.description}
+            onChange={handleChange}
+        ></textarea>
+    </div>
 
-                        <div>
-                            <label htmlFor="duedate">Due Date:</label>
-                            <input
-                                type="date"
-                                name="duedate"
-                                id="duedate"
-                                value={formData.duedate}
-                                onChange={handleChange}
-                            />
-                        </div>
+    <div>
+        <label htmlFor="duedate">Due Date:</label>
+        <input
+            type="date"
+            name="duedate"
+            id="duedate"
+            value={formData.duedate}
+            onChange={handleChange}
+        />
+    </div>
 
-                        <div>
-                            <label htmlFor="priority">Priority:</label>
-                            <input
-                                type="text"
-                                name="priority"
-                                id="priority"
-                                placeholder="Enter priority"
-                                value={formData.priority}
-                                onChange={handleChange}
-                            />
-                        </div>
+    <div>
+        <label htmlFor="priority">Priority:</label>
+        <input
+            type="text"
+            name="priority"
+            id="priority"
+            placeholder="Enter priority"
+            value={formData.priority}
+            onChange={handleChange}
+        />
+    </div>
 
-                        <div>
-                            <button onClick={addTask}>Add</button>
-                        </div>
-                    </form>
+    <div className="form-actions">
+        <button type="button" onClick={addTask}>Add</button>
+        <button type="button" onClick={togglePopup} className="cancel-button">Cancel</button>
+    </div>
+</form>
 
-                    <button onClick={togglePopup}>Cancel</button>
+                    
                 </div>
             )}
 
