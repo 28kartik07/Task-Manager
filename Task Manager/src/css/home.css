@@ -44,8 +44,6 @@
     background-color: #a9a9a9; 
 }
 
-
-
 /* task category section */
 .task_category
 {
@@ -65,7 +63,8 @@
 }
 
 .task_element {
-    background-color: black;
+    background-color: rgb(24, 24, 24);
+    border-radius: 20px;
     margin: 0;
     width: 30%;
     height: 90%;

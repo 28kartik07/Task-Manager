@@ -1,18 +1,18 @@
 .completed-button {
     background-color: white;
-    color: rgb(24, 24, 24); /* Dark text color */
+    color: rgb(24, 24, 24);
     padding: 8px 15px;
-    font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 6rem;
 }
 
 .completed-button:hover {
-    background-color: #f1f1f1; /* Light hover effect */
-    color: rgb(24, 24, 24); /* Keep text dark */
+    background-color: #f1f1f1; 
+    color: rgb(24, 24, 24); 
     border-color: #888;
 }
 

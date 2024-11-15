@@ -27,7 +27,7 @@ function Taskcard({task,tasks,setNewTasks})
             </div>
 
             <div style={{display:'flex', justifyContent:'space-between'}}>
-                <h4 style={{marginLeft:'30px',marginTop:'5px'}}>Due Date : {task.duedate}</h4>
+                <h4 style={{marginLeft:'10px',marginTop:'5px'}}>Due Date : {task.duedate}</h4>
             </div>
 
             <div style={{display:'flex',justifyContent:'space-evenly'}}>
