@@ -8,6 +8,11 @@ A simple and user-friendly task management application designed to help users ma
 
 2. **Task Management**  
    - Add, edit, and delete tasks with attributes like title, description, due date, and priority level.  
+   - Add the task from the Add button displayed in the dashboard.
+   - Edit the task form the Edit icon displayed along with each of the task.
+   - Delete the task form the Delete icon displayed along with each of the task.
+   - View the complete Description of the task by clicking the descripion button displayed along with each task.
+   - Mark them as completed or incomplete by the "Mark as complete/incomplete" button displayed inside the description popup.
 
 3. **Priority Levels**  
    - Assign one of three priority levels (High, Medium, Low) to each task.  
